@@ -4,5 +4,5 @@ title: "JellyBeam"
 permalink: /jellybeam
 ---
 
-Jelly Beam Project Page
+<h1>JellyBeam Build Guide and Resources</h1>
 <img src="https://raw.githubusercontent.com/RepresentMonster/RepresentMonster/master/JellyBeamSplash.jpg" alt="JellyBeam v1 Splash">
