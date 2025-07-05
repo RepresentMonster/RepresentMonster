@@ -1,0 +1,87 @@
+:root {
+  --bg: #eeeeee;
+  --nav-bg: #6a1bbf;
+  --btn-bg: #00c8c8;
+  --btn-text: black;
+  --text: black;
+  --highlight: #ff1fae;
+  --header-bg: #6a1bbf;
+  --footer-bg: #6a1bbf;
+}
+
+body.dark-mode {
+  --bg: #1e1e1e;
+  --nav-bg: #4b148f;
+  --btn-bg: #008080;
+  --btn-text: white;
+  --text: #ddd;
+  --highlight: #ff66cc;
+  --header-bg: #3a0f70;
+  --footer-bg: #3a0f70;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: 'Courier New', monospace;
+  color: var(--text);
+  margin: 0;
+}
+
+header, footer {
+  background-color: var(--header-bg);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--nav-bg);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  background-color: var(--btn-bg);
+  border: 2px outset white;
+  padding: 5px 12px;
+  text-decoration: none;
+  color: var(--btn-text);
+  font-weight: bold;
+}
+
+.nav-btn:focus, .nav-btn.active {
+  background-color: #cccccc;
+  border: 2px inset gray;
+  outline: 1px dotted var(--btn-text);
+  outline-offset: -4px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.project-box {
+  background-color: white;
+  border: 2px ridge var(--nav-bg);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 5px 10px;
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  border: 2px outset white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  color: var(--highlight);
+  text-decoration: underline;
+}
